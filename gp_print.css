@@ -17,7 +17,16 @@
 
 
 /* Hidden Objects */
+nav,
+footer,
+article {
+    display: none;
+}
 
+section.sheet {
+    width: 6in;
+    margin: 0in auto 0in auto;
+}
 
 
 
