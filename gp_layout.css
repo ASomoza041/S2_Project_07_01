@@ -22,6 +22,7 @@
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
+/* The code below is code for the flex layout styles. The styles set up the page to change as the page grows or shrinks. */
 body {
     display: -webkit-flex;
     display: flex;
@@ -30,10 +31,12 @@ body {
 }
 
 section#sheet {
+    -webkit-flex: 3 1 301px;
     flex: 3 1 301px;
 }
 
 body>article {
+    -webkit-flex: 1 3 180px;
     flex: 1 3 180px;
 }
 
@@ -44,6 +47,7 @@ body>article {
 	Mobile Devices: 0 - 480 pixels
    ============================================
 */
+/* The code below is code for the Mobile device styles. It tells the browser how to load the page on a mobile phone.   */
 @media only screen and (max-width: 480px) {
     img.panel {
         width: 100%;
@@ -62,6 +66,7 @@ body>article {
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
+/* The code below is code for the tablet/desktop styles. It tells the browser how to load the page on a tablet/desktop.   */
 @media only screen and (min-width: 481px) {
     nav.horizontal ul {
         display: -webkit-flex;
@@ -72,6 +77,7 @@ body>article {
     }
 
     nav.horizontal ul li {
+        -webkit-flex: 1 1 auto;
         flex: 1 1 auto;
     }
 
